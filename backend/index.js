@@ -1,9 +1,12 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 
 const dishes=require("./routes/dishesRoutes");
 const registerUser=require("./routes/userRoutes");
 const mongoose=require('mongoose');
+
+app.use(cors());
 
 mongoose.connect('mongodb://127.0.0.1:27017/Food_app')
 .then(()=> console.log("connected"))
