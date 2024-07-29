@@ -8,7 +8,7 @@ const mongoose=require('mongoose');
 
 app.use(cors());
 
-mongoose.connect('mongodb://127.0.0.1:27017/Food_app')
+mongoose.connect('mongodb+srv://vaibhav2019jain:Rb13OFDBi26eYC4t@cluster0.v3gq07k.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 .then(()=> console.log("connected"))
 const port = 5000;
 
@@ -28,3 +28,7 @@ app.use("/api", registerUser);
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 })  
+
+
+
+// Rb13OFDBi26eYC4t
