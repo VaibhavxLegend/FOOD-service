@@ -31,7 +31,7 @@ const Login = () => {
   const registerUser = async (currentUser) => {
     try {
       const response = await axios.post(
-        `https://food-service-o7v7c6qvr-vaibhav-jains-projects-4d19b47e.vercel.app/api/user/register`,
+        `https://food-service-gilt.vercel.app/api/user/register`,
         currentUser
       );
       const { user, token } = response.data;
@@ -49,7 +49,7 @@ const Login = () => {
   const loginUser = async (currentUser) => {
     try {
       const response = await axios.post(
-        `https://food-service-o7v7c6qvr-vaibhav-jains-projects-4d19b47e.vercel.app/api/user/login`,
+        `https://food-service-gilt.vercel.app/api/user/login`,
         currentUser
       );
       const { user, token } = response.data;
